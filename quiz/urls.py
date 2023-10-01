@@ -1,6 +1,6 @@
-from django.urls import path
+from django.urls import path, re_path
 from . import views as quiz_views
 
 urlpatterns = [
-    path(r'^&', quiz_views.qpage),
+    path('', quiz_views.qpage),
 ]
